@@ -1,0 +1,65 @@
+[submodule "go-mod-core-contracts"]
+	path = go-mod-core-contracts
+	url = git@github.com:clint456/go-mod-core-contracts.git
+[submodule "go-mod-configuration"]
+	path = go-mod-configuration
+	url = git@github.com:clint456/go-mod-configuration.git
+[submodule "go-mod-messaging"]
+	path = go-mod-messaging
+	url = git@github.com:clint456/go-mod-messaging.git
+[submodule "go-mod-registry"]
+	path = go-mod-registry
+	url = git@github.com:clint456/go-mod-registry.git
+[submodule "go-mod-secrets"]
+	path = go-mod-secrets
+	url = git@github.com:clint456/go-mod-secrets.git
+[submodule "north-sdk-go"]
+	path = north-sdk-go
+	url = git@github.com:clint456/north-sdk-go.git
+[submodule "go-mod-bootstrap"]
+	path = go-mod-bootstrap
+	url = git@github.com:clint456/go-mod-bootstrap.git
+[submodule "edgex-go"]
+	path = edgex-go
+	url = git@github.com:clint456/edgex-go.git
+[submodule "edge-ui"]
+	path = edge-ui
+	url = git@github.com:clint456/edge-ui.git
+[submodule "device-sdk-go"]
+	path = device-sdk-go
+	url = git@github.com:clint456/device-sdk-go.git
+##### 操作步骤 ########
+# # 1. 创建并进入父文件夹
+# mkdir parent
+# cd parent
+# git init
+
+# 2. 添加子模块（两种方式）
+## 方式A：子仓库还没下载，直接clone为submodule
+# git submodule add https://gitxxx/repoA.git repoA
+# git submodule add https://gitxxx/repoB.git repoB
+
+## 方式B：子仓库文件夹已经本地存在（已经有repoA文件夹，里面是独立git）
+# 注意：本地repoA必须是干净状态，并且有远程origin
+# git submodule add https://gitxxx/repoA.git repoA
+# 会自动在父仓库生成 .gitmodules 配置文件
+
+# 3. 提交父仓库（只提交配置和子模块快照，不会把子仓库代码塞进来）
+# git add .gitmodules repoA repoB
+# git commit -m "init parent repo with submodules"
+
+##### 后续常用命令 ########
+# 别人拉取父仓库后，默认不会拉子模块代码，需要执行
+# git clone https://父仓库地址 parent
+# cd parent
+# git submodule init
+# git submodule update
+
+# 一键clone父仓库+自动拉所有子模块
+# git clone --recurse-submodules https://父仓库地址 parent
+
+# 更新所有子模块到远程最新
+# git submodule update --remote
+
+# 在父仓库查看子模块状态
+# git submodule status
