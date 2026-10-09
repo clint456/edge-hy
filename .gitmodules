@@ -22,9 +22,9 @@
 [submodule "edgex-go"]
 	path = edgex-go
 	url = git@github.com:clint456/edgex-go.git
-[submodule "edge-ui"]
-	path = edge-ui
-	url = git@github.com:clint456/edge-ui.git
+[submodule "edge-ui-lite"]
+	path = edge-ui-lite
+	url = git@github.com:clint456/edge-ui-lite.git
 [submodule "device-sdk-go"]
 	path = device-sdk-go
 	url = git@github.com:clint456/device-sdk-go.git
