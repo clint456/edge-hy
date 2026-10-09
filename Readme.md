@@ -9,14 +9,18 @@ git clone --recurse-submodules https://github.com/clint456/edge-hy.git
 
 ## 目录结构
 ```
-├── device-sdk-go  设备服务sdk（南向服务）
-├── edgex-ui-lite  轻量管理web
-├── go-mod-bootstrap 公共组件
+.
+├── Readme.md
+├── device-sdk-go
+├── edgex-go
+├── edgex-ui-lite
+├── go-mod-bootstrap
 ├── go-mod-configuration
 ├── go-mod-core-contracts
 ├── go-mod-messaging
 ├── go-mod-registry
 ├── go-mod-secrets
-├── north-sdk-go 北向服务sdk
-└── Readme.md
+└── north-sdk-go
+
+11 directories, 1 file
 ```
