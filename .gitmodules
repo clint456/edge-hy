@@ -22,40 +22,9 @@
 [submodule "edgex-go"]
 	path = edgex-go
 	url = git@github.com:clint456/edgex-go.git
+[submodule "edge-ui-lite"]
+	path = edge-ui-lite
+	url = git@github.com:clint456/edge-ui-lite.git
 [submodule "device-sdk-go"]
 	path = device-sdk-go
 	url = git@github.com:clint456/device-sdk-go.git
-[submodule "edgex-ui-lite"]
-	path = edgex-ui-lite
-	url = git@github.com:clint456/edgex-ui-lite.git
-
-##### 操作步骤 ########
-# # 1. 创建并进入父文件夹
-# mkdir parent
-# cd parent
-# git init
-
-# 2. 添加子模块（两种方式）
-## 方式A：子仓库还没下载，直接clone为submodule
-# git submodule add https://gitxxx/repoA.git repoA
-# git submodule add https://gitxxx/repoB.git repoB
-
-## 方式B：子仓库文件夹已经本地存在（已经有repoA文件夹，里面是独立git）
-# 注意：本地repoA必须是干净状态，并且有远程origin
-# git submodule add https://gitxxx/repoA.git repoA
-# 会自动在父仓库生成 .gitmodules 配置文件
-
-# 3. 提交父仓库（只提交配置和子模块快照，不会把子仓库代码塞进来）
-# git add .gitmodules repoA repoB
-# git commit -m "init par
-# git submodule init
-# git submodule update
-
-# 一键clone父仓库+自动拉所有子模块
-# git clone --recurse-submodules https://父仓库地址 parent
-
-# 更新所有子模块到远程最新
-# git submodule update --remote
-
-# 在父仓库查看子模块状态
-# git submodule status
