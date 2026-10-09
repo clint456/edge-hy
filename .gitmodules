@@ -22,9 +22,9 @@
 [submodule "edgex-go"]
 	path = edgex-go
 	url = git@github.com:clint456/edgex-go.git
-[submodule "edge-ui-lite"]
-	path = edge-ui-lite
-	url = git@github.com:clint456/edge-ui-lite.git
+[submodule "edge-ui"]
+	path = edge-ui
+	url = git@github.com:clint456/edge-ui.git
 [submodule "device-sdk-go"]
 	path = device-sdk-go
 	url = git@github.com:clint456/device-sdk-go.git
@@ -46,12 +46,7 @@
 
 # 3. 提交父仓库（只提交配置和子模块快照，不会把子仓库代码塞进来）
 # git add .gitmodules repoA repoB
-# git commit -m "init parent repo with submodules"
-
-##### 后续常用命令 ########
-# 别人拉取父仓库后，默认不会拉子模块代码，需要执行
-# git clone https://父仓库地址 parent
-# cd parent
+# git commit -m "init par
 # git submodule init
 # git submodule update
 
