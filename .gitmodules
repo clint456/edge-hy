@@ -22,12 +22,13 @@
 [submodule "edgex-go"]
 	path = edgex-go
 	url = git@github.com:clint456/edgex-go.git
-[submodule "edge-ui"]
-	path = edge-ui
-	url = git@github.com:clint456/edge-ui.git
 [submodule "device-sdk-go"]
 	path = device-sdk-go
 	url = git@github.com:clint456/device-sdk-go.git
+[submodule "edgex-ui-lite"]
+	path = edgex-ui-lite
+	url = git@github.com:clint456/edgex-ui-lite.git
+
 ##### 操作步骤 ########
 # # 1. 创建并进入父文件夹
 # mkdir parent
